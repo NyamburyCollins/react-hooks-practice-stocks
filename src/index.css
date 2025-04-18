@@ -17,3 +17,45 @@ h2 {
   margin: 0 auto;
   text-align: center;
 }
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.filter-sort button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-sort button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.filter-sort select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.stock-list, .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
